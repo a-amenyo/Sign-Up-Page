@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/* background-color:red; */
+	background-image: url("../images/bg-img.jpg");
+	background-size: cover;
+	margin:0px;
+	padding:0px;
+	color: whitesmoke;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+a{
+	text-decoration:none;
+}
+
+.container{
+	width: 52%;
+	height:70%;
+	background-color:#FFFFFF;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	box-shadow:2px 2px 30px rgba(66,57,238,0.2);
+	border-radius:20px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	background-image: url("../images/bg.gif");
+	/* background-image: url("../images/bg-img.jpg"); */
+	/* background-image: url("../images/sign1.jpg"); */
+	background-size: contain;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.sign-up{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+.text-container{
+	width:50%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	margin-left:-40px;
+	
+}
+.heading{
+	font-family:calibri;
+	color:black; 
+}
+.text{
+	width:300px;
+	height:50px;
+	box-shadow:2px 6px 18px rgba(66,57,238,0.3);
+	border-radius: 30px;
+	display:flex;
+	align-items:center;
+	margin:10px;
+}
+.text input{
+	height:40px;
+	width:60%;
+	outline:none;
+	border:none;
+	font-size:14px;
+	margin:5px;
+	background-color:transparent;
+}
+.text img{
+	margin-left:20px; 
+}
+.conditions{
+	font-family:myriad pro;
+	color:black;
+	font-weight: bold;
+	font-size:15px;
+}
+.trems{
+	display: flex;
+	align-items:center; 
+}
+.conditions a{
+	color:#7d22e3;
+	font-weight:500;
+}
+button{
+	width:200px;
+	height:40px;
+	outline:none;
+	border:none;
+	border-radius:20px;
+	background:linear-gradient(-30deg,#3b02ed,#8e2ae0 55%);
+	box-shadow:2px 6px 16px rgba(66,57,238,0.3);
+	color:#FFFFFF;
+	font-weight:600;
+	letter-spacing:1px;
+	font-weight: 13px;
+	cursor: pointer;
+}
+button:active{
+	transform:scale(1.1);
+}
+.text-container p{
+	width:70%;
+	text-align: center;
+	font-family:arial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height:0px;
+}
+.admin, .user{
+	position: absolute;
+}
+.admin{
+	top: 30%;
+	right: 40%;
+	z-index: 100;
+	color: black;
+	font-size: 1.7em;
+	box-shadow: 0px 0px 5px 0.4px rgba(0,0,0,0.4);
+	padding: 8px;
+	border-radius: 5px;
+}
+.user{
+	top: 30%;
+	right: 30%;
+	z-index: 100;
+	color: black;
+	font-size: 1.7em;
+	box-shadow: 0px 0px 5px 0.4px rgba(0,0,0,0.4);
+	padding: 8px;
+	border-radius: 5px;
+}
+.errorMessage{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+	color: red;
+	padding: 8px;
+	font-size: 1.2rem;
+	display: none;
+	box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.5);
+	z-index: 1000;
+	border-radius: 10px;
+}
