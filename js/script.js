@@ -3,8 +3,26 @@ let form = document.getElementById("form")
 let errorMessage = document.getElementById("error")
 let emailInput = document.getElementById('email');
 let nameInput = document.querySelector("input[type='text']");
+// let selectAdmin = document.getElementById("admin");
+// let selectUser = documnent.getElementById("user");
 
+// password.disabled = true;
+// emailInput.disabled = true; 
+// nameInput.disabled = true; 
 
+// selectAdmin.addEventListener("click", () => {
+//   password.disabled = false;
+//   emailInput.disabled = false;
+//   nameInput.disabled = false;
+
+// })
+
+// selectUser.addEventListener("click", () => {
+//   password.disabled = false;
+//   emailInput.disabled = false;
+//   nameInput.disabled = false;
+
+// })
 
 
 form.addEventListener("submit", (e) => {
@@ -53,5 +71,5 @@ form.addEventListener("submit", (e) => {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   };
- 
+
 });
